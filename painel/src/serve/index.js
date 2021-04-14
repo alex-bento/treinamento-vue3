@@ -51,5 +51,3 @@ export default {
   users: UsersService(httpClient),
   feedbacks: FeedbacksService(httpClient)
 }
-
-//Para subir o back-end para produção precisa fazer o login no vertice e depois colocar  vertice --prod e seguir respondendo as resposta

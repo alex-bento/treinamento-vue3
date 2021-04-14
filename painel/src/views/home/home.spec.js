@@ -4,19 +4,19 @@ import { shallowMount } from '@vue/test-utils'
 import { routes } from '../../router'
 
 const router = createRouter({
-    history: createWebHistory('/'),
-    routes
-  })
+  history: createWebHistory('/'),
+  routes
+})
 
 describe('<home />', () => {
-    it('should render home correctly', async () => {
-        router.push('/')
-        await router.isReady()
-        const wrapeer = shallowMount(Home, {
-            global: {
-                plugins: [router]
-            }
-        })
-        expect(wrapeer.html()).toMatchSnapshot()
-    }) 
-}) 
+  it('should render home correctly', async () => {
+    router.push('/')
+    await router.isReady()
+    const wrapeer = shallowMount(Home, {
+      global: {
+        plugins: [router]
+      }
+    })
+    expect(wrapeer.html()).toMatchSnapshot()
+  })
+})
