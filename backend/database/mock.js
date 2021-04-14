@@ -7,6 +7,14 @@ module.exports = {
       password: '1234',
       apiKey: ['fcd5015c-10d3-4e9c-b395-ec7ed8850165'],
       createdAt: new Date('2020-09-05').getTime()
+    },
+    {
+      id: 'eab759f8-f238-4ff9-ae91-ee1558982330',
+      name: 'Alex Bento',
+      email: 'alex@alex.com',
+      password: '1234',
+      apiKey: ['fcd5015c-10d3-4e9c-b395-ec7ed8850166'],
+      createdAt: new Date('2020-04-12').getTime()
     }
   ],
   feedbacks: [
@@ -79,6 +87,26 @@ module.exports = {
       device: 'Chrome 85.0, macOS 10.14',
       page: 'https://feedbacker.com/pricing',
       createdAt: new Date('2020-05-23').getTime()
+    },
+    {
+      text: 'Muito bom!',
+      fingerprint: '490135492',
+      id: 'eab759f8-f238-4ff9-ae91-ee1558982330',
+      apiKey: 'fcd5015c-10d3-4e9c-b395-ec7ed8850166',
+      type: 'OTHER',
+      device: 'Chrome 85.0, macOS 10.14',
+      page: 'https://feedbacker.com/pricing',
+      createdAt: new Date('2021-04-12').getTime()
+    },
+    {
+      text: 'Podia ter um botão de solicitar de Super',
+      fingerprint: '490135492',
+      id: 'eab759f8-f238-4ff9-ae91-ee1558982330',
+      apiKey: 'fcd5015c-10d3-4e9c-b395-ec7ed8850166',
+      type: 'IDEA',
+      device: 'Chrome 85.0, macOS 10.14',
+      page: 'https://feedbacker.com/pricing',
+      createdAt: new Date('2021-02-01').getTime()
     }
   ]
 }
