@@ -1,4 +1,4 @@
-name: Widget e2e testing
+name: Painel e2e testing
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
   cypress:
     defaults:
       run:
-        working-directory: widget
+        working-directory: painel
 
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -33,6 +33,6 @@ jobs:
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:	
-          working-directory: dashboard
+          working-directory: painel
           browser: chrome
           headless: true

@@ -57,7 +57,14 @@
         />
         <div v-else class="py-3 pl-5 pr-20 mt-2 rounded bg-brand-gray  w-full lg:w-2/3 overflow-x-scroll">
           <span v-if="state.hasError">Erro ao carregar o script</span>
-          <pre v-else class="break-">&lt;script src="http://alex-bento-feedbacer-widget.netlify.app?api_key={{store.users.currentUser.apiKey}}"&gt;&lt;/script>&gt;</pre>
+          <pre v-else>
+&lt;:script
+  defer
+  async
+  onload="init('{{store.users.currentUser.apiKey}}')"
+  src="http://alex-bento-feedbacer-widget.netlify.app/init.js"
+&gt;&lt;/script>&gt;
+        </pre>
         </div>
      </div>
    </div>

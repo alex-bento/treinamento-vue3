@@ -1,4 +1,4 @@
-name: Dashboard unit testing
+name: Ferramenta unit testing
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: dashboard
+    working-directory: ferramenta
 
 jobs:
   jest:
